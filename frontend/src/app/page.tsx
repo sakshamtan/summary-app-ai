@@ -70,7 +70,7 @@ export default function Home() {
 
         <div className="bg-white shadow rounded-lg p-6 mb-8">
           <textarea
-            className="w-full h-48 p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full h-48 p-4 border text-gray-700 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
             placeholder="Enter your text here..."
             value={text}
             onChange={(e) => setText(e.target.value)}
@@ -95,14 +95,14 @@ export default function Home() {
 
         {summary && (
           <div className="bg-white shadow rounded-lg p-6 mb-8">
-            <h2 className="text-xl font-semibold mb-4">Summary</h2>
+            <h2 className="text-xl text-gray-700 font-semibold mb-4">Summary</h2>
             <p className="text-gray-700">{summary}</p>
           </div>
         )}
 
         {bulletPoints.length > 0 && (
           <div className="bg-white shadow rounded-lg p-6">
-            <h2 className="text-xl font-semibold mb-4">Bullet Points</h2>
+            <h2 className="text-xl text-gray-700 font-semibold mb-4">Bullet Points</h2>
             <ul className="list-disc list-inside space-y-2">
               {bulletPoints.map((point, index) => (
                 <li key={index} className="text-gray-700">
